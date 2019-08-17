@@ -23,14 +23,16 @@
       loadSidebar: true,
       subMaxLevel: 2,
       alias: {
-        '/.*/_navbar.md': '/_navbar.md',
-        '/.*/_sidebar.md': '/_sidebar.md'
+        '/.*/_navbar.md': '/_navbar.md'
       },
-      search : [
-        '/心理学/',
-        '/计算机/'
-      ],
-
+      search: {
+        paths: [
+          '/心理学/',
+          '/计算机/'
+        ],
+        placeholder: '搜索相关文档',
+        noData: '找不到结果'
+      }
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
