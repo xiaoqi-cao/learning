@@ -16,14 +16,24 @@
     window.$docsify = {
       name: '读书笔记',
       repo: 'https://github.com/xiaoqi-cao/learning.git',
+      search: 'auto',
       onlycover: true,
       coverpage: true,
       loadNavbar: true,
       loadSidebar: true,
       subMaxLevel: 2,
-      homepage: 'README.md'
+      alias: {
+        '/.*/_navbar.md': '/_navbar.md',
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
+      search : [
+        '/心理学/',
+        '/计算机/'
+      ],
+
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
 </body>
 </html>
